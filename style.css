@@ -1,0 +1,301 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    align-items:center;
+    padding-left:20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    height:60px;
+}
+.navbars{
+    display:flex;
+    justify-content:space-between;
+    padding-right:20px;
+    column-gap:15px;
+}
+.navbar a{
+    text-decoration:none;
+    color:black; 
+}
+.nav h1{
+    font-family: "Ga Maamli", sans-serif;
+}
+.navbar a:hover{
+    text-decoration:underline;
+    color:rgb(219, 136, 189); 
+}
+.three{
+    display:none;
+}
+.snav{
+    background-color:#1D232C;
+    color:white;
+    position:fixed;
+    top:0;
+    left:-60%;
+    height:100%;
+    width:50%;
+    transition: left 0.3s ease;
+    
+}
+.snavbar{
+   
+    margin-bottom:20px;
+    padding:20px;
+}
+.snavbar a{
+    color:white;
+    text-decoration:none;
+    font-size:30px;
+}
+.snavbar a:hover{
+    text-decoration:underline;
+    color:rgb(219, 136, 189); 
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding :30px;
+    align-items: center;
+    
+}
+.header2 img {
+    width:260px;
+    height:400px;
+    
+}
+.header1 button{
+    margin-top:10px;
+    color:white;
+    background-color: black;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+}
+.service{
+    display:flex;
+    padding-top:10px;
+    padding-left:20px;
+}
+.servicea{
+    display:flex;
+   margin-left:20px;
+    margin:6px;
+    padding-left:20px; 
+    
+}
+.service1
+{
+    background-color: #F2F4F7;
+    margin-right:10px;
+    padding:5px;
+}
+.addimg{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom:20px;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.imgbox {
+    position:relative;
+    margin-top:10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.imgbox img{
+    width:250px;
+    height:250px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.imgbox button{
+    position:absolute;
+    top:70%;
+    left:30%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:10px;
+    cursor:pointer;
+    background: transparent;
+}
+.imgbox button:hover{
+    background-color: gray;
+    
+}
+
+.news{
+    margin-top:10px;
+    text-align:center;
+}
+.news input{
+    width:80%;
+    padding:10px;
+    margin-top:10px;
+}
+.news button{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:10px;
+}
+.news button:hover{
+    background-color: gray;
+    border:none;
+}
+
+.footer{
+    padding:20px;
+    margin-top:15px;
+    background-color: #1D232C;
+    color:white;
+}
+.footer h2{
+    text-decoration: underline;
+}
+.search{
+    padding-top:35px;
+}
+.search1{
+   width:80%;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:10px;
+    margin:auto;
+    position:relative
+}
+
+.search1 input{
+    width:100%;
+    border-radius:30px;
+    padding:15px;
+   
+}
+.search1 i{
+    position:absolute;
+    right: 23px; /* Adjust the position as needed */
+    top: 25px;
+}
+.container{
+    padding-top:20px;
+    margin-bottom:20px;
+}
+.box-container{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.box img{
+    width:260px;
+    height:260px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.box h3{
+    text-align:centre;
+    margin-left:80px;
+    margin-top:10px;
+    cursor:pointer;
+    
+}
+
+.last{
+    
+    background-color: #1D232C;
+    color:aliceblue;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:20px;
+    height:560px;
+    width:1050px;
+    margin-left:200px;
+    margin-right:50px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.last1{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.last input{
+    margin-top:20px;
+    width:1000px;
+    height:80%;
+    
+}
+.last textarea{
+    margin-top:20px;
+    width:1000px;
+    height:100%;
+    
+}
+.last button{
+   margin-top:20px;
+   padding:10px;
+   background-color: aliceblue;
+   cursor:pointer;
+   margin-left:120px;
+   border-radius:30px;
+   width:300px;
+}
+@media screen and (max-width:600px) {
+
+    .three{
+        display:block;
+    }
+    .navbars{
+        display:none;
+    }
+    .header{
+        display: block; 
+        
+    }
+    .header2 {
+        margin-top:20px;
+    }
+    .servicea{
+        flex-direction:column;  
+    }
+    .service1{
+        margin-bottom:10px;
+    }
+    .imgbox{
+        box-shadow: none;
+        padding-left:30px;
+        padding-bottom:20px;
+    }
+    .last{
+        width:450px;
+        margin-left:20px;
+    }
+    .last input{
+        width:430px;
+    }
+    .last textarea{
+        width:430px;
+    }
+    .last button{
+        margin-left:20px;
+    }
+
+
+}
